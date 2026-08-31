@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Development Course | Learn Python &amp; Build Real Projects</title>
+<meta name="description" content="كورس Python Development عملي يبدأ من أساسيات Python ويصل إلى OOP و GUI وقواعد البيانات و Data Structures &amp; Algorithms مع مشاريع عملية و 4 Bonus Sessions.">
+<meta name="keywords" content="Python, Python Development, OOP, GUI, Flet, SQLite, Database, Data Structures, Algorithms, كورس بايثون, Codexa">
+<meta name="author" content="Codexa Programming Academy">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Python Development Course | Learn Python &amp; Build Real Projects">
+<meta property="og:description" content="كورس Python Development عملي يبدأ من أساسيات Python ويصل إلى OOP و GUI وقواعد البيانات و Data Structures &amp; Algorithms مع مشاريع عملية و 4 Bonus Sessions.">
+<meta property="og:image" content="assets/logo-primary.png">
+<meta property="og:locale" content="ar_AR">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">تخطي إلى المحتوى الرئيسي</a>
+
+<!-- ==================== HEADER ==================== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#home" class="brand" aria-label="Codexa Programming Academy - الرئيسية">
+      <img src="assets/logo-primary.png" alt="Codexa Programming Academy" class="brand-logo" width="180" height="67">
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="التنقل الرئيسي">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link is-active" data-nav>الرئيسية</a></li>
+        <li><a href="#content" class="nav-link" data-nav>المحتوى</a></li>
+        <li><a href="#benefits" class="nav-link" data-nav>المميزات</a></li>
+        <li><a href="#offer" class="nav-link" data-nav>العرض</a></li>
+        <li><a href="#faq" class="nav-link" data-nav>الأسئلة الشائعة</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>تواصل معنا</a></li>
+      </ul>
+    </nav>
+
+    <a href="#" class="btn btn-primary btn-sm header-cta" data-whatsapp-cta>احجز مكانك الآن</a>
+
+    <button class="hamburger" id="hamburger-btn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav-list">
+      <li><a href="#home" data-nav data-close-mobile>الرئيسية</a></li>
+      <li><a href="#content" data-nav data-close-mobile>المحتوى</a></li>
+      <li><a href="#benefits" data-nav data-close-mobile>المميزات</a></li>
+      <li><a href="#offer" data-nav data-close-mobile>العرض</a></li>
+      <li><a href="#faq" data-nav data-close-mobile>الأسئلة الشائعة</a></li>
+      <li><a href="#contact" data-nav data-close-mobile>تواصل معنا</a></li>
+    </ul>
+    <a href="#" class="btn btn-primary btn-block" data-whatsapp-cta data-close-mobile>احجز مكانك الآن</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="container hero-inner">
+
+      <div class="hero-content" data-reveal>
+        <p class="eyebrow eyebrow-light">CODEXA · PROGRAMMING ACADEMY</p>
+        <h1 class="hero-title">Python <span class="text-amber">Development</span></h1>
+        <p class="hero-headline">اتعلم Python من الأساسيات إلى بناء التطبيقات</p>
+        <p class="hero-desc">كورس عملي يأخذك خطوة بخطوة من أساسيات Python إلى OOP و GUI وقواعد البيانات و Data Structures &amp; Algorithms.</p>
+
+        <div class="hero-stats">
+          <div class="stat-chip">
+            <span class="stat-num">16</span>
+            <span class="stat-label">Session</span>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-num">+4</span>
+            <span class="stat-label">Bonus Sessions</span>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Months</span>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-num" dir="ltr">80%<span class="stat-num-sep">/</span>20%</span>
+            <span class="stat-label">Practical / Theory</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-row">
+          <a href="#" class="btn btn-primary btn-lg" data-whatsapp-cta>احجز مكانك الآن</a>
+          <a href="#content" class="btn btn-ghost btn-lg" data-nav>شوف محتوى الكورس</a>
+        </div>
+      </div>
+
+      <div class="hero-price-card" data-reveal>
+        <p class="eyebrow">العرض الحالي</p>
+        <div class="price-row">
+          <span class="price-old">2500 جنيه</span>
+          <span class="badge-discount">خصم 500 جنيه</span>
+        </div>
+        <div class="price-current">
+          <span class="price-current-num">2000</span>
+          <span class="price-current-cur">جنيه فقط</span>
+        </div>
+        <div class="price-card-divider"></div>
+        <ul class="price-card-list">
+          <li><span>عدد السيشنز</span><strong>16 Session</strong></li>
+          <li><span>Bonus</span><strong>4 Sessions مجانًا</strong></li>
+          <li><span>المدة</span><strong>2 Months</strong></li>
+          <li><span>النظام</span><strong>80% عملي / 20% نظري</strong></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== COURSE SNAPSHOT ==================== -->
+  <section class="section" id="snapshot">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">SNAPSHOT</p>
+        <h2 class="section-title">الكورس في سطور</h2>
+        <p class="section-sub">مسار تدريبي عملي يجمع بين الأساسيات والتطبيق وبناء المشاريع.</p>
+      </div>
+
+      <div class="snapshot-grid" data-reveal>
+        <div class="snapshot-card">
+          <span class="snapshot-num">16</span>
+          <span class="snapshot-label">Session</span>
+        </div>
+        <div class="snapshot-card">
+          <span class="snapshot-num">4</span>
+          <span class="snapshot-label">Bonus Sessions</span>
+        </div>
+        <div class="snapshot-card">
+          <span class="snapshot-num">2</span>
+          <span class="snapshot-label">Months</span>
+        </div>
+        <div class="snapshot-card">
+          <span class="snapshot-num">80%</span>
+          <span class="snapshot-label">Practical</span>
+        </div>
+        <div class="snapshot-card">
+          <span class="snapshot-num">20%</span>
+          <span class="snapshot-label">Theory</span>
+        </div>
+        <div class="snapshot-card">
+          <span class="snapshot-num">2</span>
+          <span class="snapshot-label">Sessions / Week</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COURSE LEVELS ==================== -->
+  <section class="section section-alt" id="content">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">CURRICULUM</p>
+        <h2 class="section-title">محتوى الكورس</h2>
+        <p class="section-sub">أربع مراحل تدريبية متكاملة، من الأساسيات إلى المشاريع الحقيقية.</p>
+      </div>
+
+      <div class="levels" data-reveal>
+
+        <div class="level-item">
+          <button class="level-header" data-accordion-trigger aria-expanded="true" aria-controls="level-1">
+            <span class="level-num">01</span>
+            <span class="level-heading">
+              <span class="level-title">Fundamentals</span>
+              <span class="level-desc">بناء أساس قوي في Python وحل المشكلات</span>
+            </span>
+            <span class="level-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="level-panel" id="level-1" data-accordion-panel>
+            <div class="level-panel-inner">
+            <ul class="topic-list">
+              <li>Python Syntax</li>
+              <li>Variables &amp; Data Types</li>
+              <li>Conditions &amp; Loops</li>
+              <li>Functions</li>
+              <li>Data Collections</li>
+              <li>File Handling</li>
+              <li>Error Handling</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="level-item">
+          <button class="level-header" data-accordion-trigger aria-expanded="false" aria-controls="level-2">
+            <span class="level-num">02</span>
+            <span class="level-heading">
+              <span class="level-title">OOP</span>
+              <span class="level-desc">بناء وتنظيم التطبيقات بالبرمجة كائنية التوجه</span>
+            </span>
+            <span class="level-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="level-panel" id="level-2" data-accordion-panel>
+            <div class="level-panel-inner">
+            <ul class="topic-list">
+              <li>Classes &amp; Objects</li>
+              <li>Constructors</li>
+              <li>Encapsulation</li>
+              <li>Inheritance</li>
+              <li>Polymorphism</li>
+              <li>Abstraction</li>
+              <li>OOP Final Project</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="level-item">
+          <button class="level-header" data-accordion-trigger aria-expanded="false" aria-controls="level-3">
+            <span class="level-num">03</span>
+            <span class="level-heading">
+              <span class="level-title">GUI &amp; Database</span>
+              <span class="level-desc">تطبيقات تفاعلية مرتبطة بقواعد البيانات</span>
+            </span>
+            <span class="level-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="level-panel" id="level-3" data-accordion-panel>
+            <div class="level-panel-inner">
+            <ul class="topic-list">
+              <li>GUI Development</li>
+              <li>Flet Framework</li>
+              <li>UI Controls</li>
+              <li>Events</li>
+              <li>Forms</li>
+              <li>SQLite</li>
+              <li>Database Integration</li>
+              <li>CRUD</li>
+              <li>GUI Final Project</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="level-item">
+          <button class="level-header" data-accordion-trigger aria-expanded="false" aria-controls="level-4">
+            <span class="level-num">04</span>
+            <span class="level-heading">
+              <span class="level-title">Data Structures &amp; Algorithms</span>
+              <span class="level-desc">تطوير مهارات التفكير البرمجي وحل المشكلات</span>
+            </span>
+            <span class="level-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="level-panel" id="level-4" data-accordion-panel>
+            <div class="level-panel-inner">
+            <ul class="topic-list">
+              <li>Data Structures</li>
+              <li>Algorithms</li>
+              <li>Data Patterns</li>
+              <li>Problem Solving</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRACTICAL LEARNING ==================== -->
+  <section class="section" id="practical">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">HANDS-ON</p>
+        <h2 class="section-title">80% تطبيق عملي — 20% نظري</h2>
+      </div>
+
+      <div class="ratio-block" data-reveal>
+        <div class="ratio-bar" role="img" aria-label="80 بالمئة تطبيق عملي و20 بالمئة نظري">
+          <div class="ratio-seg ratio-seg-practical" style="--ratio:80%;">
+            <span class="ratio-seg-label">80%<br>Practical</span>
+          </div>
+          <div class="ratio-seg ratio-seg-theory" style="--ratio:20%;">
+            <span class="ratio-seg-label">20%<br>Theory</span>
+          </div>
+        </div>
+
+        <div class="tag-row">
+          <span class="tag">Coding Exercises</span>
+          <span class="tag">Practical Tasks</span>
+          <span class="tag">Projects</span>
+          <span class="tag">Database Practice</span>
+          <span class="tag">Problem Solving</span>
+          <span class="tag">Trainer Guidance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS & BENEFITS ==================== -->
+  <section class="section section-alt" id="benefits">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">OUTCOME</p>
+        <h2 class="section-title">هتخرج من الكورس بإيه؟</h2>
+      </div>
+
+      <div class="outcome-grid" data-reveal>
+        <div class="outcome-projects">
+          <h3 class="outcome-subtitle">مشاريع عملية</h3>
+          <div class="project-card">
+            <span class="project-letter">O</span>
+            <div>
+              <p class="project-title">OOP Final Project</p>
+              <p class="project-desc">مشروع متكامل يطبّق البرمجة كائنية التوجه من الصفر.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="project-letter">G</span>
+            <div>
+              <p class="project-title">GUI Final Project</p>
+              <p class="project-desc">تطبيق تفاعلي كامل مرتبط بقاعدة بيانات SQLite.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="outcome-benefits">
+          <h3 class="outcome-subtitle">مميزات الكورس</h3>
+          <ul class="benefit-list">
+            <li><span class="benefit-index">01</span><span>شهادة إتمام الكورس</span></li>
+            <li><span class="benefit-index">02</span><span>ملفات ومواد تدريبية للسيشنات</span></li>
+            <li><span class="benefit-index">03</span><span>تمارين وتاسكات عملية بعد كل سيشن</span></li>
+            <li><span class="benefit-index">04</span><span>متابعة وتوجيه من المدرب أثناء تنفيذ المشاريع</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BONUS SESSIONS ==================== -->
+  <section class="section section-dark" id="bonus">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="badge-free">مجانًا</span>
+        <h2 class="section-title section-title-light">4 Bonus Sessions مجانًا</h2>
+      </div>
+
+      <div class="bonus-grid" data-reveal>
+        <div class="bonus-card">
+          <span class="bonus-tag">BONUS 01</span>
+          <p class="bonus-title">Programming Career Roadmap</p>
+        </div>
+        <div class="bonus-card">
+          <span class="bonus-tag">BONUS 02</span>
+          <p class="bonus-title">Build Your LinkedIn Profile</p>
+        </div>
+        <div class="bonus-card">
+          <span class="bonus-tag">BONUS 03</span>
+          <p class="bonus-title">GitHub &amp; Developer Portfolio</p>
+        </div>
+        <div class="bonus-card">
+          <span class="bonus-tag">BONUS 04</span>
+          <p class="bonus-title">CV &amp; Career Preparation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SPECIAL OFFER ==================== -->
+  <section class="section" id="offer">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">LIMITED TIME</p>
+        <h2 class="section-title">العرض الخاص</h2>
+      </div>
+
+      <div class="offer-card" data-reveal>
+        <div class="offer-price-side">
+          <span class="price-old price-old-lg">2500 جنيه</span>
+          <span class="badge-discount">خصم 500 جنيه</span>
+          <div class="price-current price-current-lg">
+            <span class="price-current-num">2000</span>
+            <span class="price-current-cur">جنيه فقط</span>
+          </div>
+          <a href="#" class="btn btn-primary btn-lg btn-block" data-whatsapp-cta>احجز مكانك الآن</a>
+        </div>
+
+        <div class="offer-details-side">
+          <ul class="offer-details-list">
+            <li><strong>16</strong><span>Session</span></li>
+            <li><strong>+4</strong><span>Bonus Sessions مجانًا</span></li>
+            <li><strong>2</strong><span>Months</span></li>
+            <li><strong>2</strong><span>Sessions / Week</span></li>
+            <li><strong>80%</strong><span>Practical</span></li>
+            <li><strong>20%</strong><span>Theory</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GOLDEN GUARANTEE ==================== -->
+  <section class="section section-dark" id="guarantee">
+    <div class="container">
+      <div class="guarantee-card" data-reveal>
+        <p class="eyebrow">GOLDEN GUARANTEE</p>
+        <h2 class="section-title section-title-light">الضمان الذهبي</h2>
+        <div class="guarantee-stats">
+          <div class="guarantee-stat">
+            <span class="guarantee-num">3000 <small>جنيه</small></span>
+            <span class="guarantee-label">القيمة</span>
+          </div>
+          <div class="guarantee-divider" aria-hidden="true"></div>
+          <div class="guarantee-stat">
+            <span class="guarantee-num">22 <small>Sessions</small></span>
+            <span class="guarantee-label">إجمالي القيمة التعليمية</span>
+          </div>
+        </div>
+        <p class="guarantee-text">تحصل على محتوى تدريبي بقيمة 3000 جنيه بإجمالي 22 Session بين المحتوى الأساسي والـ Bonus Sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">FAQ</p>
+        <h2 class="section-title">الأسئلة الشائعة</h2>
+      </div>
+
+      <div class="faq-list" data-reveal>
+
+        <div class="faq-item">
+          <button class="faq-question" data-accordion-trigger aria-expanded="false" aria-controls="faq-1">
+            <span>هل الكورس مناسب للمبتدئين؟</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer" id="faq-1" data-accordion-panel>
+            <div class="faq-answer-inner"><p>نعم، الكورس مصمم ليبدأ من الصفر مع أساسيات Python قبل الانتقال لأي مفهوم متقدم.</p></div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" data-accordion-trigger aria-expanded="false" aria-controls="faq-2">
+            <span>هل أحتاج خبرة سابقة في Python؟</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer" id="faq-2" data-accordion-panel>
+            <div class="faq-answer-inner"><p>لا، لا يوجد شرط لخبرة سابقة. الكورس يبدأ من الأساسيات مباشرةً.</p></div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" data-accordion-trigger aria-expanded="false" aria-controls="faq-3">
+            <span>مدة الكورس كام؟</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer" id="faq-3" data-accordion-panel>
+            <div class="faq-answer-inner"><p>مدة الكورس شهرين (2 Months) بمعدل سيشنين أسبوعيًا.</p></div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" data-accordion-trigger aria-expanded="false" aria-controls="faq-4">
+            <span>عدد السيشنز كام؟</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer" id="faq-4" data-accordion-panel>
+            <div class="faq-answer-inner"><p>16 سيشن أساسي بالإضافة إلى 4 Bonus Sessions مجانًا، بإجمالي 22 سيشن.</p></div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" data-accordion-trigger aria-expanded="false" aria-controls="faq-5">
+            <span>هل يوجد مشاريع عملية؟</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer" id="faq-5" data-accordion-panel>
+            <div class="faq-answer-inner"><p>نعم، هيكون في OOP Final Project و GUI Final Project لتطبيق كل اللي اتعلمته.</p></div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" data-accordion-trigger aria-expanded="false" aria-controls="faq-6">
+            <span>هل يوجد شهادة؟</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer" id="faq-6" data-accordion-panel>
+            <div class="faq-answer-inner"><p>نعم، هتحصل على شهادة إتمام الكورس عند الانتهاء من كل المراحل والمشروع النهائي.</p></div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" data-accordion-trigger aria-expanded="false" aria-controls="faq-7">
+            <span>ما هي الـ Bonus Sessions؟</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer" id="faq-7" data-accordion-panel>
+            <div class="faq-answer-inner"><p>4 سيشنز إضافية مجانية عن Programming Career Roadmap و LinkedIn و GitHub و CV &amp; Career Preparation.</p></div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" data-accordion-trigger aria-expanded="false" aria-controls="faq-8">
+            <span>هل يوجد متابعة أثناء تنفيذ المشاريع؟</span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer" id="faq-8" data-accordion-panel>
+            <div class="faq-answer-inner"><p>نعم، هيكون في متابعة وتوجيه من المدرب أثناء تنفيذ المشاريع العملية.</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT / SOCIAL ==================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2 class="section-title">تواصل معنا</h2>
+      </div>
+
+      <div class="social-grid" data-reveal>
+        <a href="#" class="social-link" data-social="whatsapp" target="_blank" rel="noopener">
+          <span class="social-name">WhatsApp</span>
+          <span class="social-sub">احجز واتساب مباشر</span>
+        </a>
+        <a href="#" class="social-link" data-social="facebook" target="_blank" rel="noopener">
+          <span class="social-name">Facebook</span>
+        </a>
+        <a href="#" class="social-link" data-social="email">
+          <span class="social-name">Email</span>
+        </a>
+        <a href="#" class="social-link" data-social="instagram" target="_blank" rel="noopener">
+          <span class="social-name">Instagram</span>
+        </a>
+        <a href="#" class="social-link" data-social="youtube" target="_blank" rel="noopener">
+          <span class="social-name">YouTube</span>
+        </a>
+        <a href="#" class="social-link" data-social="linkedin" target="_blank" rel="noopener">
+          <span class="social-name">LinkedIn</span>
+        </a>
+        <a href="#" class="social-link" data-social="website" target="_blank" rel="noopener">
+          <span class="social-name">Website</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FINAL CTA ==================== -->
+  <section class="section section-dark final-cta">
+    <div class="container final-cta-inner" data-reveal>
+      <h2 class="section-title section-title-light">جاهز تبدأ رحلتك في Python؟</h2>
+      <p class="final-cta-sub">اتعلم، طبّق، وابني مشاريع حقيقية.</p>
+
+      <div class="final-cta-price">
+        <span class="price-current-num">2000</span>
+        <span class="price-current-cur">جنيه فقط</span>
+        <span class="price-old">بدلًا من 2500 جنيه</span>
+        <span class="badge-discount">خصم 500 جنيه</span>
+      </div>
+
+      <p class="final-cta-sessions"><span dir="ltr">16 Sessions <span class="dot-sep">+</span> 4 Bonus Sessions</span> مجانًا</p>
+
+      <a href="#" class="btn btn-primary btn-lg" data-whatsapp-cta>احجز مكانك الآن</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo-white.png" alt="Codexa Programming Academy" class="footer-logo" width="170" height="63">
+      <p class="footer-tagline">Python Development</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="روابط سريعة">
+      <a href="#home" data-nav>الرئيسية</a>
+      <a href="#content" data-nav>المحتوى</a>
+      <a href="#offer" data-nav>العرض</a>
+      <a href="#faq" data-nav>الأسئلة الشائعة</a>
+      <a href="#contact" data-nav>تواصل معنا</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="#" data-social="facebook" target="_blank" rel="noopener">Facebook</a>
+      <a href="#" data-social="instagram" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" data-social="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#" data-social="email">Email</a>
+      <a href="#" data-social="youtube" target="_blank" rel="noopener">YouTube</a>
+      <a href="#" data-social="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Codexa Programming Academy. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
